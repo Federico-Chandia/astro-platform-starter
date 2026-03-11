@@ -1,19 +1,79 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Política de Privacidad - LuckyCoin">
+    <article class="prose prose-invert max-w-none">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold mb-2">POLÍTICA DE PRIVACIDAD</h1>
+            <p class="text-gray-400">Última actualización: 10 de marzo de 2026</p>
+            <p class="mt-4">Federico Chandia ("nosotros", "nuestro" o "nos") opera la aplicación móvil LuckyCoin (la "App").</p>
+            <p class="mt-2">Esta página te informa sobre nuestras políticas respecto a la recopilación, uso y divulgación de datos personales cuando utilizas nuestra App.</p>
+        </div>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">1. RECOPILACIÓN DE INFORMACIÓN</h2>
+            <p class="font-semibold mb-4">No recopilamos información personal identificable.</p>
+            <p class="mb-2">LuckyCoin no requiere:</p>
+            <ul class="list-disc pl-6 space-y-1 mb-4">
+                <li>Registro de usuario</li>
+                <li>Correo electrónico</li>
+                <li>Nombre o información de contacto</li>
+                <li>Acceso a contactos, cámara o ubicación</li>
+            </ul>
+            <p class="font-semibold mb-2">Datos técnicos anónimos:</p>
+            <p>Podemos recopilar datos anónimos sobre el dispositivo (modelo, versión de SO) únicamente para mejorar la estabilidad de la app. Estos datos no identifican al usuario.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">2. USO DE LA INFORMACIÓN</h2>
+            <p class="mb-2">Los datos anónimos mencionados se utilizan únicamente para:</p>
+            <ul class="list-disc pl-6 space-y-1">
+                <li>Diagnosticar errores técnicos</li>
+                <li>Mejorar el rendimiento de la app</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">3. SERVICIOS DE TERCEROS</h2>
+            <p class="font-semibold mb-2">Publicidad:</p>
+            <p class="mb-2">Utilizamos Google AdMob para mostrar anuncios. AdMob puede usar identificadores anónimos del dispositivo para personalizar anuncios.</p>
+            <p class="mb-4">Consulta la política de privacidad de Google: <a href="https://policies.google.com/privacy" class="text-blue-400 hover:text-blue-300 underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+            <p class="font-semibold">Análisis:</p>
+            <p class="text-gray-400 italic">No utilizamos servicios de análisis adicionales.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">4. SEGURIDAD</h2>
+            <p>La seguridad de tu información es importante, pero recuerda que ningún método de transmisión por Internet o método de almacenamiento electrónico es 100% seguro.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">5. PRIVACIDAD DE MENORES</h2>
+            <p>LuckyCoin es adecuada para todas las edades. No recopilamos intencionalmente información de menores de 13 años. Si eres padre/madre y crees que tu hijo nos proporcionó información, contáctanos para eliminarla.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">6. TUS DERECHOS</h2>
+            <p class="mb-2">Dependiendo de tu ubicación, puedes tener derecho a:</p>
+            <ul class="list-disc pl-6 space-y-1 mb-4">
+                <li>Acceder a tus datos personales</li>
+                <li>Solicitar eliminación de datos</li>
+                <li>Oponerte al procesamiento</li>
+            </ul>
+            <p>Dado que no almacenamos datos personales, estas solicitudes generalmente no aplican. Para dudas, contáctanos.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">7. CAMBIOS A ESTA POLÍTICA</h2>
+            <p>Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos de cambios significativos publicando la nueva versión en esta página.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">8. CONTACTO</h2>
+            <p class="mb-2">Para preguntas sobre esta Política de Privacidad, contáctanos:</p>
+            <p class="mb-1">📧 Email: <a href="mailto:fedelchandia@gmail.com" class="text-blue-400 hover:text-blue-300 underline">fedelchandia@gmail.com</a></p>
+            <p>🌐 Desarrollador: Federico Chandia</p>
+        </section>
+    </article>
 </Layout>
